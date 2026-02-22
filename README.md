@@ -4,72 +4,62 @@
 
 ---
 
-<!-- PACMAN DEV ANIMATION -->
 <div align="center">
 
 <svg width="750" height="140" viewBox="0 0 750 140" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- PACMAN -->
   <g>
     <path fill="yellow">
       <animate attributeName="d"
-        dur="0.4s"
+        dur="0.3s"
         repeatCount="indefinite"
         values="
-        M70 70 L110 40 A40 40 0 1 1 110 100 Z;
-        M70 70 L110 60 A40 40 0 1 1 110 80 Z;
-        M70 70 L110 40 A40 40 0 1 1 110 100 Z" />
+        M30 70 L70 40 A40 40 0 1 1 70 100 Z;
+        M30 70 L70 60 A40 40 0 1 1 70 80 Z;
+        M30 70 L70 40 A40 40 0 1 1 70 100 Z" />
       <animateTransform
         attributeName="transform"
         type="translate"
-        from="0 0"
-        to="520 0"
-        dur="7s"
+        from="-100 0"
+        to="800 0"
+        dur="8s"
         repeatCount="indefinite"/>
     </path>
   </g>
 
-  <!-- TECHS -->
-  <circle cx="250" cy="70" r="18" fill="#3776AB">
-    <animate attributeName="opacity" from="1" to="0" begin="2.1s" dur="0.2s" fill="freeze"/>
-  </circle>
-  <text x="236" y="75" font-size="12" fill="white">Py</text>
-
-  <circle cx="350" cy="70" r="18" fill="#239120">
-    <animate attributeName="opacity" from="1" to="0" begin="3.1s" dur="0.2s" fill="freeze"/>
-  </circle>
-  <text x="337" y="75" font-size="12" fill="white">C#</text>
-
-  <circle cx="450" cy="70" r="18" fill="#f7df1e">
-    <animate attributeName="opacity" from="1" to="0" begin="4.1s" dur="0.2s" fill="freeze"/>
-  </circle>
-  <text x="437" y="75" font-size="12" fill="black">JS</text>
-
-  <!-- BUG GHOSTS -->
   <g>
-    <path d="M580 50 Q580 30 600 30 Q620 30 620 50 L620 90 Q610 80 600 90 Q590 80 580 90 Z"
-          fill="#ff4c4c">
-      <animateTransform attributeName="transform"
-        type="translate"
-        values="0 0; -15 0; 0 0"
-        dur="1s"
-        repeatCount="indefinite"/>
-    </path>
-    <circle cx="592" cy="55" r="4" fill="white"/>
-    <circle cx="608" cy="55" r="4" fill="white"/>
+    <circle cx="200" cy="70" r="18" fill="#3776AB">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.31;0.32;1" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="188" y="75" font-size="12" font-family="Arial" fill="white">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.31;0.32;1" dur="8s" repeatCount="indefinite"/>Py
+    </text>
+
+    <circle cx="350" cy="70" r="18" fill="#239120">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.48;0.49;1" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="337" y="75" font-size="12" font-family="Arial" fill="white">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.48;0.49;1" dur="8s" repeatCount="indefinite"/>C#
+    </text>
+
+    <circle cx="500" cy="70" r="18" fill="#f7df1e">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.65;0.66;1" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="488" y="75" font-size="12" font-family="Arial" fill="black">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.65;0.66;1" dur="8s" repeatCount="indefinite"/>JS
+    </text>
   </g>
 
   <g>
-    <path d="M660 50 Q660 30 680 30 Q700 30 700 50 L700 90 Q690 80 680 90 Q670 80 660 90 Z"
-          fill="#9b59b6">
-      <animateTransform attributeName="transform"
-        type="translate"
-        values="0 0; -10 0; 0 0"
-        dur="1.2s"
-        repeatCount="indefinite"/>
+    <path d="M620 50 Q620 30 640 30 Q660 30 660 50 L660 90 Q650 80 640 90 Q630 80 620 90 Z" fill="#ff4c4c">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="150 0" dur="8s" repeatCount="indefinite"/>
     </path>
-    <circle cx="672" cy="55" r="4" fill="white"/>
-    <circle cx="688" cy="55" r="4" fill="white"/>
+    <circle cx="632" cy="55" r="4" fill="white">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="150 0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="648" cy="55" r="4" fill="white">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="150 0" dur="8s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
 </svg>
@@ -97,11 +87,7 @@
 
 Me chamo José Arthur Camilo dos Anjos, sou formado em Desenvolvimento de Sistemas pela ETEC Dr. Adail Nunes da Silva e atualmente curso Análise e Desenvolvimento de Sistemas na FATEC.
 
-Atuei como estagiário na Proavante como professor, desenvolvendo habilidades de comunicação, ensino e organização. Hoje faço parte do grupo de pesquisa GPES, contribuindo no desenvolvimento do jogo VidaUT.
-
-Tenho aprofundado meus estudos em Inteligência Artificial, desenvolvimento de jogos e automação, sempre buscando evoluir tecnicamente e aplicar o conhecimento na prática.
-
----
+Atuando hoje no grupo de pesquisa GPES, contribuindo no desenvolvimento do jogo VidaUT.
 
 - 🔭 Atualmente estudando Python, IA e C#
 - 📫 Contato: josearthurcamilo.30@gmail.com
