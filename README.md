@@ -3,7 +3,6 @@
 🎯 Desenvolvedor interessado em projetos de tecnologia, jogos e automação!
 
 ---
-
 <div align="center">
 
 <svg width="750" height="140" viewBox="0 0 750 140" xmlns="http://www.w3.org/2000/svg">
@@ -34,14 +33,18 @@
     <text x="188" y="75" font-size="12" font-family="Arial" fill="white">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.31;0.32;1" dur="8s" repeatCount="indefinite"/>Py
     </text>
+  </g>
 
+  <g>
     <circle cx="350" cy="70" r="18" fill="#239120">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.48;0.49;1" dur="8s" repeatCount="indefinite"/>
     </circle>
     <text x="337" y="75" font-size="12" font-family="Arial" fill="white">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.48;0.49;1" dur="8s" repeatCount="indefinite"/>C#
     </text>
+  </g>
 
+  <g>
     <circle cx="500" cy="70" r="18" fill="#f7df1e">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.65;0.66;1" dur="8s" repeatCount="indefinite"/>
     </circle>
@@ -65,7 +68,6 @@
 </svg>
 
 </div>
-
 ---
 
 ### 📊 Estatísticas GitHub:
