@@ -3,88 +3,105 @@
 🎯 Desenvolvedor interessado em projetos de tecnologia, jogos e automação!
 
 ---
-  
-### 📊 Estatísticas GitHub:
 
-<table>
-  
-  <tr>
-    
-  <td>
-   
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoseArthurCamiloDosAnjos&layout=compact&langs_count=6&theme=tokyonight)
-
-  </td>
-
-  <td>
-    
-![JoseArthur GitHub Stats](https://github-readme-stats.vercel.app/api?username=JoseArthurCamiloDosAnjos&show_icons=true&theme=tokyonight)
-
-  </td>
-    
-  </tr>
-   
-</table>
-<div style="display: flex; align-items: center; gap: 20px;">
-  
-### ✨ Sobre mim
-<table>
-  <tr>
-    <td>
-      
+<!-- PACMAN DEV ANIMATION -->
 <div align="center">
 
-<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+<svg width="750" height="140" viewBox="0 0 750 140" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Pacman -->
-  <circle cx="60" cy="60" r="40" fill="yellow">
-    <animate attributeName="cx" from="60" to="520" dur="6s" repeatCount="indefinite" />
+  <!-- PACMAN -->
+  <g>
+    <path fill="yellow">
+      <animate attributeName="d"
+        dur="0.4s"
+        repeatCount="indefinite"
+        values="
+        M70 70 L110 40 A40 40 0 1 1 110 100 Z;
+        M70 70 L110 60 A40 40 0 1 1 110 80 Z;
+        M70 70 L110 40 A40 40 0 1 1 110 100 Z" />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0 0"
+        to="520 0"
+        dur="7s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- TECHS -->
+  <circle cx="250" cy="70" r="18" fill="#3776AB">
+    <animate attributeName="opacity" from="1" to="0" begin="2.1s" dur="0.2s" fill="freeze"/>
   </circle>
+  <text x="236" y="75" font-size="12" fill="white">Py</text>
 
-  <!-- Boca animada -->
-  <polygon points="60,60 100,30 100,90" fill="white">
-    <animateTransform attributeName="transform"
-      type="rotate"
-      values="0 60 60; 40 60 60; 0 60 60"
-      dur="0.4s"
-      repeatCount="indefinite"/>
-    <animate attributeName="points"
-      values="60,60 100,30 100,90;
-              60,60 100,50 100,70;
-              60,60 100,30 100,90"
-      dur="0.4s"
-      repeatCount="indefinite"/>
-  </polygon>
+  <circle cx="350" cy="70" r="18" fill="#239120">
+    <animate attributeName="opacity" from="1" to="0" begin="3.1s" dur="0.2s" fill="freeze"/>
+  </circle>
+  <text x="337" y="75" font-size="12" fill="white">C#</text>
 
-  <!-- Bolinhas (representando linguagens) -->
-  <circle cx="200" cy="60" r="15" fill="#3776AB" />
-  <text x="192" y="65" font-size="10" fill="white">Py</text>
+  <circle cx="450" cy="70" r="18" fill="#f7df1e">
+    <animate attributeName="opacity" from="1" to="0" begin="4.1s" dur="0.2s" fill="freeze"/>
+  </circle>
+  <text x="437" y="75" font-size="12" fill="black">JS</text>
 
-  <circle cx="280" cy="60" r="15" fill="#239120" />
-  <text x="272" y="65" font-size="10" fill="white">C#</text>
+  <!-- BUG GHOSTS -->
+  <g>
+    <path d="M580 50 Q580 30 600 30 Q620 30 620 50 L620 90 Q610 80 600 90 Q590 80 580 90 Z"
+          fill="#ff4c4c">
+      <animateTransform attributeName="transform"
+        type="translate"
+        values="0 0; -15 0; 0 0"
+        dur="1s"
+        repeatCount="indefinite"/>
+    </path>
+    <circle cx="592" cy="55" r="4" fill="white"/>
+    <circle cx="608" cy="55" r="4" fill="white"/>
+  </g>
 
-  <circle cx="360" cy="60" r="15" fill="#f34b7d" />
-  <text x="348" y="65" font-size="10" fill="white">JS</text>
-
-  <circle cx="440" cy="60" r="15" fill="#68217A" />
-  <text x="428" y="65" font-size="10" fill="white">SQL</text>
+  <g>
+    <path d="M660 50 Q660 30 680 30 Q700 30 700 50 L700 90 Q690 80 680 90 Q670 80 660 90 Z"
+          fill="#9b59b6">
+      <animateTransform attributeName="transform"
+        type="translate"
+        values="0 0; -10 0; 0 0"
+        dur="1.2s"
+        repeatCount="indefinite"/>
+    </path>
+    <circle cx="672" cy="55" r="4" fill="white"/>
+    <circle cx="688" cy="55" r="4" fill="white"/>
+  </g>
 
 </svg>
 
 </div>
+
+---
+
+### 📊 Estatísticas GitHub:
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JoseArthurCamiloDosAnjos&layout=compact&langs_count=6&theme=tokyonight"/>
     </td>
     <td>
-      <p>Me chamo José Arthur Camilo dos Anjos, sou formado no curso de Desenvolvimento de Sistemas pela ETEC Dr. Adail Nunes da Silva, de Taquaritinga, e atualmente estou cursando Analise e Desenvolvimento de Sistemas na FATEC da cidade. Tive a oportunidade de fazer estágio na Proavante como professor, onde aprendi a lidar com pessoas, ensinar conteúdos e também aprimorei meus conhecimentos no pacote Office. \h Hoje, faço parte do grupo de pesquisa GPES, onde estou ajudando no desenvolvimento do jogo VidaUT. Com isso, venho aprendendo bastante sobre tecnologia, desenvolvimento de jogos e também sobre o uso de Inteligência Artificial. Estou em busca de oportunidades para continuar aprendendo e colocando em prática tudo o que estou vivendo nessa jornada.</p>
+      <img src="https://github-readme-stats.vercel.app/api?username=JoseArthurCamiloDosAnjos&show_icons=true&theme=tokyonight"/>
     </td>
   </tr>
-  
 </table>
 
-  <div style="max-width: 700px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; line-height: 1.8;">
-    
-- 🔭 Atualmente estudando python, IA e C#
-- 📫 Como me encontrar: josearthurcamilo.30@gmail.com
-  
-  </div>
-  
-</div>
+---
+
+### ✨ Sobre mim
+
+Me chamo José Arthur Camilo dos Anjos, sou formado em Desenvolvimento de Sistemas pela ETEC Dr. Adail Nunes da Silva e atualmente curso Análise e Desenvolvimento de Sistemas na FATEC.
+
+Atuei como estagiário na Proavante como professor, desenvolvendo habilidades de comunicação, ensino e organização. Hoje faço parte do grupo de pesquisa GPES, contribuindo no desenvolvimento do jogo VidaUT.
+
+Tenho aprofundado meus estudos em Inteligência Artificial, desenvolvimento de jogos e automação, sempre buscando evoluir tecnicamente e aplicar o conhecimento na prática.
+
+---
+
+- 🔭 Atualmente estudando Python, IA e C#
+- 📫 Contato: josearthurcamilo.30@gmail.com
