@@ -1,58 +1,110 @@
 <svg width="750" height="140" viewBox="0 0 750 140" xmlns="http://www.w3.org/2000/svg">
+
   <style>
     text { font-family: 'Segoe UI', Arial, sans-serif; font-weight: bold; }
   </style>
 
+  <!-- DEFINIÇÃO DA BOCA -->
+  <defs>
+    <clipPath id="mouthClip">
+      <polygon id="mouthShape" points="60,70 120,40 120,100"/>
+    </clipPath>
+  </defs>
+
+  <!-- PACMAN -->
   <g>
-    <path fill="yellow">
-      <animate attributeName="d" dur="0.25s" repeatCount="indefinite"
-        values="M30 70 L70 40 A40 40 0 1 1 70 100 Z; 
-                M30 70 L70 60 A40 40 0 1 1 70 80 Z; 
-                M30 70 L70 40 A40 40 0 1 1 70 100 Z" />
-      <animateTransform attributeName="transform" type="translate" from="-100 0" to="850 0" dur="6s" repeatCount="indefinite"/>
+    <circle cx="80" cy="70" r="40" fill="yellow" clip-path="url(#mouthClip)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="-150 0"
+        to="850 0"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ANIMAÇÃO DA BOCA -->
+    <animate
+      xlink:href="#mouthShape"
+      attributeName="points"
+      dur="0.25s"
+      repeatCount="indefinite"
+      values="
+        60,70 120,40 120,100;
+        60,70 120,60 120,80;
+        60,70 120,40 120,100"/>
+  </g>
+
+  <!-- PYTHON -->
+  <g>
+    <circle cx="250" cy="70" r="18" fill="#3776AB">
+      <animate attributeName="opacity"
+        values="0;1;1;0;0"
+        keyTimes="0;0.1;0.35;0.36;1"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+    <text x="240" y="74" font-size="12" fill="white">
+      <animate attributeName="opacity"
+        values="0;1;1;0;0"
+        keyTimes="0;0.1;0.35;0.36;1"
+        dur="6s"
+        repeatCount="indefinite"/>Py
+    </text>
+  </g>
+
+  <!-- C# -->
+  <g>
+    <circle cx="400" cy="70" r="18" fill="#239120">
+      <animate attributeName="opacity"
+        values="0;1;1;0;0"
+        keyTimes="0;0.1;0.53;0.54;1"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+    <text x="390" y="74" font-size="12" fill="white">
+      <animate attributeName="opacity"
+        values="0;1;1;0;0"
+        keyTimes="0;0.1;0.53;0.54;1"
+        dur="6s"
+        repeatCount="indefinite"/>C#
+    </text>
+  </g>
+
+  <!-- JS -->
+  <g>
+    <circle cx="550" cy="70" r="18" fill="#f7df1e">
+      <animate attributeName="opacity"
+        values="0;1;1;0;0"
+        keyTimes="0;0.1;0.71;0.72;1"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+    <text x="541" y="74" font-size="12" fill="black">
+      <animate attributeName="opacity"
+        values="0;1;1;0;0"
+        keyTimes="0;0.1;0.71;0.72;1"
+        dur="6s"
+        repeatCount="indefinite"/>JS
+    </text>
+  </g>
+
+  <!-- BUG FANTASMA -->
+  <g>
+    <path d="M650 50 Q650 30 670 30 Q690 30 690 50 
+             L690 90 
+             Q680 80 670 90 
+             Q660 80 650 90 Z"
+          fill="#ff4c4c">
+      <animate attributeName="opacity"
+        values="1;1;0"
+        keyTimes="0;0.85;1"
+        dur="6s"
+        repeatCount="indefinite"/>
     </path>
-  </g>
 
-  <g>
-    <circle cx="200" cy="70" r="18" fill="#3776AB">
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.35;0.36;1" dur="6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="190" y="74" font-size="12" fill="white">
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.35;0.36;1" dur="6s" repeatCount="indefinite"/>Py
-    </text>
-  </g>
-
-  <g>
-    <circle cx="350" cy="70" r="18" fill="#239120">
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.53;0.54;1" dur="6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="338" y="74" font-size="12" fill="white">
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.53;0.54;1" dur="6s" repeatCount="indefinite"/>C#
-    </text>
-  </g>
-
-  <g>
-    <circle cx="500" cy="70" r="18" fill="#f7df1e">
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.71;0.72;1" dur="6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="491" y="74" font-size="12" fill="black">
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.71;0.72;1" dur="6s" repeatCount="indefinite"/>JS
-    </text>
-  </g>
-
-  <g>
-    <path d="M620 50 Q620 30 640 30 Q660 30 660 50 L660 90 Q650 80 640 90 Q630 80 620 90 Z" fill="#ff4c4c">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="200 0" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="6s" repeatCount="indefinite"/>
-    </path>
-    <circle cx="632" cy="55" r="3" fill="white">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="200 0" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="648" cy="55" r="3" fill="white">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="200 0" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="6s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="662" cy="55" r="3" fill="white"/>
+    <circle cx="678" cy="55" r="3" fill="white"/>
   </g>
 
 </svg>
